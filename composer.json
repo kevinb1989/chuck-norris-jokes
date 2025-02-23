@@ -1,0 +1,25 @@
+{
+    "name": "kevinb1989/chuck-norris-jokes",
+    "description": "Create random Chuck Norris jokes.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Bui",
+            "email": "hoanglongbui89@yahoo.com.vn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kevinb1989\\ChuckNorrisJokes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kevinb1989\\ChuckNorrisJokes\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
