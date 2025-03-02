@@ -10,7 +10,7 @@ class JokeFactoryTest extends TestCase
     public function test_it_returns_a_random_joke()
     {
         $jokes = new JokeFactory([
-            'This is a joke'
+            'This is a joke',
         ]);
         $joke = $jokes->getRandomJoke();
 
