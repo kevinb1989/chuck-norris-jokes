@@ -26,7 +26,7 @@ class JokeFactoryTest extends TestCase
                     'url' => 'https://api.chucknorris.io/jokes/7Po2MPWaTdCoRD0eD8g6TQ',
                     'value' => 'Chuck Norris urinates while doing a hand-stand on the toilet seat.',
                 ]),
-            ),
+            )
         ]);
 
         $handler = HandlerStack::create($mock);
