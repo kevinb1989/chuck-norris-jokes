@@ -2,9 +2,9 @@
 
 namespace Kevinb1989\ChuckNorrisJokes\Tests;
 
+use Illuminate\Support\Facades\Artisan;
 use Kevinb1989\ChuckNorrisJokes\ChuckNorrisJokesServiceProvider;
 use Kevinb1989\ChuckNorrisJokes\Facades\ChuckNorris;
-use Illuminate\Support\Facades\Artisan;
 use Orchestra\Testbench\TestCase;
 
 class LaravelTest extends TestCase
