@@ -20,11 +20,11 @@ class ChuckNorrisJokesServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'chuck-norris');
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/chuck-norris'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/chuck-norris'),
         ], 'views');
 
         $this->publishes([
-            __DIR__ . '/../config/chuck-norris.php' => base_path('config/chuck-norris.php'),
+            __DIR__.'/../config/chuck-norris.php' => base_path('config/chuck-norris.php'),
         ], 'config');
 
         if (! class_exists('CreateJokesTable')) {
@@ -42,6 +42,6 @@ class ChuckNorrisJokesServiceProvider extends ServiceProvider
             return new JokeFactory();
         });
 
-        $this->mergeConfigFrom(__DIR__ . '/../config/chuck-norris.php', 'chuck-norris');
+        $this->mergeConfigFrom(__DIR__.'/../config/chuck-norris.php', 'chuck-norris');
     }
 }
