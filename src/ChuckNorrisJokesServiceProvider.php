@@ -23,9 +23,9 @@ class ChuckNorrisJokesServiceProvider extends ServiceProvider
             __DIR__.'/../resources/views' => resource_path('views/vendor/chuck-norris'),
         ]);
 
-        if (!class_exists('CreateJokesTable')) {
+        if (! class_exists('CreateJokesTable')) {
             $this->publishes([
-                __DIR__ . '../database/create_jokes_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_jokes_table.php'),
+                __DIR__.'../database/create_jokes_table.php.stub' => database_path('migrations/'.date('Y_m_d_His', time()).'_create_jokes_table.php'),
             ]);
         }
 

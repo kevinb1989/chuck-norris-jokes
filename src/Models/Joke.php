@@ -9,5 +9,4 @@ class Joke extends Model
     protected $guarded = [];
 
     protected $table = 'jokes';
-    
 }
