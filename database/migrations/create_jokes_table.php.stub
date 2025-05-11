@@ -12,7 +12,7 @@ class CreateJokesTable extends Migration
             $table->increments('id');
             $table->string('joke');
             $table->timestamps();
-        })
+        });
     }
 
     public function down()
